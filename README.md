@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# CS2 Pro Coaching (Demo Site)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a single-page marketing site that pretends to sell coaching sessions for Counter-Strike 2 players and teams. It showcases fictional offers, curriculum highlights, community reviews, and a simple booking form to illustrate how a premium coaching service might be presented online.
 
-## Available Scripts
+## What the site is doing (is pretending to do)
+- **Hero and positioning**: Presents "CS2 Pro Coaching" as a specialist coach offering weekly EU slots for individuals and teams.
+- **Package highlights**: Lists three mock packages (Aim Warmup, Strat Architect, Team Bootcamp) with prices, benefits, and call-to-action buttons.
+- **Perks and stats**: Shows fictional perks (bilingual coaching, downloadable drills, support access) and stat cards with impressive but made-up performance boosts.
+- **Curriculum outline**: Breaks down a pretend coaching curriculum covering mechanics, utility, calling, and post-review follow-up.
+- **Social proof**: Displays sample testimonials with star ratings to imply happy customers.
+- **Booking form**: Includes a non-functional booking form to collect name, contact, preferred package, and scheduling details.
+- **FAQ section**: Answers common pre-booking questions about language, solo vs. team sessions, and post-session materials.
+- **Branding footer**: Finishes with a lightweight footer to reinforce the brand and contact presence.
 
-In the project directory, you can run:
+## Development
+The app is built with Create React App. Useful scripts:
+- `npm start` — Run the dev server at http://localhost:3000.
+- `npm test` — Launch tests in watch mode.
+- `npm run build` — Produce a production build.
+- `npm run eject` — Copy configuration out of Create React App (one-way operation).
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This repository is for demonstration purposes only; no real coaching service is provided.
