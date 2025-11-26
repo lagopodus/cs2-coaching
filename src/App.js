@@ -182,7 +182,7 @@ function App() {
                   <p className="coach-name">{coach.name}</p>
                   <p className="coach-title">{coach.title}</p>
                 </div>
-                <div className="coach-pill">Faceit 10 · CS2 Grinder</div>
+                <div className="coach-pill">Faceit 8 · CS2 Grinder</div>
               </div>
               <p className="coach-bio">{coach.bio}</p>
 
