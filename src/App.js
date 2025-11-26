@@ -163,7 +163,7 @@ function App() {
               ))}
             </ul>
           </div>
-          <div className="focus-card">
+          <div className="session-outline">
             <h4>So sieht eine Session aus</h4>
             <ol>
               <li>Kurzer Check-in: Ziele, Map, Rolle.</li>
