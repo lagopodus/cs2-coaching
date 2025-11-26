@@ -4,21 +4,21 @@ const plans = [
   {
     name: 'Aim Warmup',
     price: '€39',
-    description: '45-min session focused on mechanics, aim drills, and movement polishing.',
-    features: ['Kovaaks-inspired routines', 'Personalized training card', 'VoD review follow-up'],
+    description: '45-minütige Trainingseinheit mit Schwerpunkt auf machanics, aim training und movement.',
+    features: ['AimLabs inspirierte Routinen', 'personalisierte Trainingskarte', 'VoD-Überprüfung und Nachbereitung'],
   },
   {
     name: 'Strat Architect',
     price: '€69',
-    description: '90-min deep dive into map control, utility lineups, and micro-calling.',
-    features: ['Utility labs for Mirage/Inferno/Anubis', 'Attack/defense gameplans', 'Live scrim simulation'],
+    description: '90-minütiger intensiver Einblick in map control, utility lineups, und micro-calling.',
+    features: ['Utility labs für Mirage/Inferno/Anubis', 'T/CT gameplans', 'Live scrim Simulation'],
     highlight: true,
   },
   {
     name: 'Team Bootcamp',
     price: '€129',
-    description: '3-hour intensive for full squads with role definitions and playbook building.',
-    features: ['5-stack role audit', 'Mid-round protocols', 'Demo study with instant clips'],
+    description: '3-stündiges Intensivtraining für komplette Teams mit Rollendefinitionen und Erstellung eines stabilen Playbooks.',
+    features: ['5-Stack-Rollenprüfung', 'Protokolle zu Midrounds', 'Demo-Review mit Sofort-Clips'],
   },
 ];
 
@@ -31,19 +31,19 @@ const perks = [
 
 const reviews = [
   {
-    name: 'Lena “DustQueen” K.',
+    name: 'Alex “cooler_alex” B.',
     text: 'Nach einer Session waren meine CT-Rotations viel cleaner. Die Utility-Overlays haben Gold wert.',
     rating: 5,
   },
   {
-    name: 'Max “Entry” H.',
+    name: 'Chrissi “chrxs.si” L.',
     text: 'Wir haben ein komplettes B-Exec Playbook für Mirage gebaut. Seitdem +15% Winrate in Faceit.',
     rating: 5,
   },
   {
-    name: 'Team Valkyrie',
+    name: 'Valentin "Guncrafta"',
     text: 'Coach hat Rollen klar definiert und die Midround Calls streamlined. Scrims fühlen sich strukturiert an.',
-    rating: 4,
+    rating: 5,
   },
 ];
 
