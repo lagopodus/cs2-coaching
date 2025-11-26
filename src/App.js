@@ -1,32 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
 import './App.css';
-
-const themes = {
-  aurora: {
-    label: 'Aurora',
-    primary: '#9b5de5',
-    accent: '#f15bb5',
-    glow: '#fee440',
-    background: '#0f1020',
-    muted: '#f2f2f2',
-  },
-  desert: {
-    label: 'Desert Sun',
-    primary: '#f6aa1c',
-    accent: '#ef5f67',
-    glow: '#f9dbbd',
-    background: '#11100e',
-    muted: '#faf6f0',
-  },
-  neon: {
-    label: 'Neon Pulse',
-    primary: '#2de1fc',
-    accent: '#f26df9',
-    glow: '#08f7fe',
-    background: '#05060a',
-    muted: '#e8f0ff',
-  },
-};
 
 const plans = [
   {
@@ -75,37 +47,59 @@ const reviews = [
   },
 ];
 
+const curriculum = [
+  {
+    title: 'Warmup & Mechanics',
+    detail: 'Crosshair Placement, Counter-Strafing, Prefire-Drills, High-Tempo Routines.',
+  },
+  {
+    title: 'Utility Lab',
+    detail: 'Lineup Library für Mirage, Anubis & Inferno inkl. Run-Boosts und Refrag-Plays.',
+  },
+  {
+    title: 'Midround & Calling',
+    detail: 'Win-Conditions erkennen, Tempo Shifts callen, klare Winlose-Kriterien kommunizieren.',
+  },
+  {
+    title: 'Post-Review & Plan',
+    detail: 'VoD Review, individuelle Drillsheet, Check-ins nach 7 Tagen und frische Scrim-Notes.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Kann ich solo oder mit Team buchen?',
+    answer: 'Beides. Solo-Sessions sind 1:1, Team-Bootcamps sind auf bis zu 5 Spieler ausgelegt.',
+  },
+  {
+    question: 'Welche Sprachen?',
+    answer: 'Deutsch oder Englisch – je nachdem, was für dich und dein Team komfortabler ist.',
+  },
+  {
+    question: 'Was bekomme ich nach dem Call?',
+    answer: 'Notion-Roadmap, personalisierte Drills, Recap-Video und 30 Tage Discord-Support.',
+  },
+];
+
 function App() {
-  const [theme, setTheme] = useState('aurora');
-  const palette = useMemo(() => themes[theme], [theme]);
-
-  useEffect(() => {
-    Object.entries(palette).forEach(([token, value]) => {
-      document.documentElement.style.setProperty(`--${token}`, value);
-    });
-  }, [palette]);
-
   return (
     <div className="app">
       <div className="noise" aria-hidden />
       <div className="gradient" aria-hidden />
       <header className="nav">
         <div className="logo">CS2 Pro Coaching</div>
-        <div className="theme-switcher" role="group" aria-label="Farbschema wählen">
-          {Object.entries(themes).map(([id, option]) => (
-            <button
-              key={id}
-              className={`theme-button ${theme === id ? 'active' : ''}`}
-              onClick={() => setTheme(id)}
-              type="button"
-            >
-              {option.label}
-            </button>
-          ))}
+        <nav className="nav-links" aria-label="Navigation">
+          <a href="#plans">Pakete</a>
+          <a href="#curriculum">Curriculum</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#booking">Termin</a>
+        </nav>
+        <div className="nav-actions">
+          <div className="nav-pill">Dust2 · Mirage · Anubis</div>
+          <a href="#booking" className="ghost-button">
+            Termin sichern
+          </a>
         </div>
-        <a href="#booking" className="ghost-button">
-          Termin sichern
-        </a>
       </header>
 
       <main className="content">
@@ -129,6 +123,20 @@ function App() {
           <div className="status-row">
             <span className="dot" />
             <span>Nächste freien Slots: Freitag & Sonntag</span>
+          </div>
+          <div className="stat-grid" aria-label="Highlights">
+            <div className="stat-card">
+              <p className="stat-number">+18%</p>
+              <p className="stat-label">Team Winrate nach 4 Wochen</p>
+            </div>
+            <div className="stat-card">
+              <p className="stat-number">120+</p>
+              <p className="stat-label">Lineups in deiner persönlichen Library</p>
+            </div>
+            <div className="stat-card">
+              <p className="stat-number">24h</p>
+              <p className="stat-label">Feedback & Recap Lieferung</p>
+            </div>
           </div>
         </section>
 
@@ -170,7 +178,25 @@ function App() {
           </div>
         </section>
 
-        <section className="reviews" aria-label="Kundenstimmen">
+        <section id="curriculum" className="curriculum">
+          <div className="section-header">
+            <p className="eyebrow">Ablauf</p>
+            <h2>Dein CS2 Curriculum</h2>
+            <p className="subtext">
+              Von Aim bis Midround Calling – wir arbeiten strukturiert, messbar und mit klaren Drills.
+            </p>
+          </div>
+          <div className="curriculum-grid">
+            {curriculum.map((block) => (
+              <article key={block.title} className="curriculum-card">
+                <h3>{block.title}</h3>
+                <p>{block.detail}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section id="reviews" className="reviews" aria-label="Kundenstimmen">
           <div className="section-header">
             <p className="eyebrow">Happy Players</p>
             <h2>Feedback aus der Community</h2>
@@ -225,6 +251,21 @@ function App() {
               </label>
               <button type="submit">Termin sichern</button>
             </form>
+          </div>
+        </section>
+
+        <section className="faq">
+          <div className="section-header">
+            <p className="eyebrow">FAQ</p>
+            <h2>Antworten vor deinem Termin</h2>
+          </div>
+          <div className="faq-grid">
+            {faqs.map((item) => (
+              <article key={item.question} className="faq-card">
+                <h3>{item.question}</h3>
+                <p>{item.answer}</p>
+              </article>
+            ))}
           </div>
         </section>
       </main>
