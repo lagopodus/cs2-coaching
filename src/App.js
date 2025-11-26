@@ -4,7 +4,7 @@ const plans = [
   {
     name: 'Aim Warmup',
     price: '€39',
-    description: '45-minütige Trainingseinheit mit Schwerpunkt auf machanics, aim training und movement.',
+    description: '45-minütige Trainingseinheit mit Schwerpunkt auf mechanics, aim training und movement.',
     features: ['AimLabs inspirierte Routinen', 'personalisierte Trainingskarte', 'VoD-Überprüfung und Nachbereitung'],
   },
   {
