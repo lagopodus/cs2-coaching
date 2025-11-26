@@ -82,19 +82,18 @@ const faqs = [
 ];
 
 const coach = {
-  name: 'Michi',
-  title: 'In-Game Leader & Utility Nerd',
-  bio: 'Fake Stats: 6.8k Stunden in CS:GO/CS2, Faceit Peak 2600 Elo, Global Elite seit 2017. Arbeitet mit deutschsprachigen Mixteams und hilft Spielern, strukturierte Midround Calls und verlässliche Utility-Fundamente zu bauen.',
+  name: 'Josh "GommeHD" T.',
+  title: 'Professioneller CS2 Spieler',
+  bio: 'Stats: 2k+ Stunden in CS:GO/CS2, Faceit Peak 1750 Elo, Arbeitet mit deutschsprachigen Mixteams und hilft Spielern, strukturierte Midround Calls und verlässliche Utility-Fundamente zu bauen.',
   stats: [
-    { label: 'Faceit Elo', value: 'Aktuell 2450 (Peak 2600)' },
-    { label: 'Spielzeit', value: '6.8k Stunden CS:GO/CS2' },
-    { label: 'Rollen', value: 'IGL · Support · Anchor' },
-    { label: 'Lieblingsmaps', value: 'Anubis, Mirage, Ancient' },
-    { label: 'Teams', value: 'ESEA Advanced / Scrim-Partner in DACH' },
-    { label: 'Coaching', value: '120+ Sessions 2024 · 4/5 Sterne Feedback' },
+    { label: 'Faceit Elo', value: 'Aktuell 1320 (Peak 1750)' },
+    { label: 'Spielzeit', value: '2k+ Stunden CS:GO/CS2' },
+    { label: 'Rollen', value: 'IGL · AWP · Star Rifler' },
+    { label: 'Lieblingsmaps', value: 'Anubis, Nuke, Overpass, Cache' },
+    { label: 'Coaching', value: '4,8/5 Sterne Feedback' },
   ],
   highlights: [
-    'Premiere 18k MMR · Global Elite (CS:GO)',
+    'Premiere 15k+ MMR · Legendary Eagle Master (CS:GO)',
     'Utility-Datenbank mit 200+ Lineups für Mirage/Anubis/Ancient',
     '12-Wochen Programm für Faceit Level 6-10 mit Demo-Reviews & Aim-Plänen',
   ],
@@ -173,7 +172,7 @@ function App() {
           <div className="section-header">
             <p className="eyebrow">Coach</p>
             <h2>Wer dich coacht</h2>
-            <p className="subtext">Fake Stats, damit du ein Gefühl für Spielstil, Maps und Erfahrung bekommst.</p>
+            <p className="subtext">Stats, damit du ein Gefühl für Spielstil, Maps und Erfahrung bekommst.</p>
           </div>
 
           <div className="coach-grid">
