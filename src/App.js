@@ -48,18 +48,21 @@ const testimonials = [
   {
     name: 'Lena “sprayqueen” K.',
     role: 'Faceit 4 → 6 in 5 Wochen',
+    rating: '★★★★★',
     quote:
       'Er hat meinen Jiggle-Peek zerstört und gleichzeitig meinen Gamesense gerettet. 10/10, würde wieder prefiren.'
   },
   {
     name: 'Tim "der IGL" R.',
     role: 'Open-Teamspeak-Coach-Enjoyer',
+    rating: '★★★★☆',
     quote:
       'Endlich ein Plan, den auch meine Rush-B-Steffen verstehen. Bonuspunkt: Seine Mid-Round-Callouts haben Namen wie „Operation Kartoffel“.'
   },
   {
     name: 'Maya “smokelord” P.',
     role: 'Support, aber lustig',
+    rating: '★★★★☆',
     quote:
       'Habe mehr Molotovs geworfen als Witze – und das soll was heißen. Utility sitzt jetzt, Timing auch. Humor inklusive.'
   }
@@ -176,15 +179,20 @@ function App() {
             <p className="eyebrow">Feedback</p>
             <h2>Spieler:innen, die schon gecoacht wurden</h2>
             <p className="section-lede">
-              Fake? Natürlich. Aber genau die Energie, die du willst, wenn jemand für dein Team spricht.
+              Fake? Natürlich. Mit Sternchen versehen, damit sich die Seite wie ein echtes Kursangebot liest.
             </p>
           </div>
           <div className="review-list">
             {testimonials.map((item) => (
               <blockquote key={item.name} className="review">
+                <div className="review-head">
+                  <span className="reviewer">{item.name}</span>
+                  <span className="stars" aria-label={`${item.rating} Sterne`}>
+                    {item.rating}
+                  </span>
+                </div>
                 <p className="quote">“{item.quote}”</p>
                 <footer>
-                  <span className="reviewer">{item.name}</span>
                   <span className="muted">{item.role}</span>
                 </footer>
               </blockquote>
