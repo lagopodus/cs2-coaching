@@ -81,6 +81,25 @@ const faqs = [
   },
 ];
 
+const coach = {
+  name: 'Michi',
+  title: 'In-Game Leader & Utility Nerd',
+  bio: 'Fake Stats: 6.8k Stunden in CS:GO/CS2, Faceit Peak 2600 Elo, Global Elite seit 2017. Arbeitet mit deutschsprachigen Mixteams und hilft Spielern, strukturierte Midround Calls und verlässliche Utility-Fundamente zu bauen.',
+  stats: [
+    { label: 'Faceit Elo', value: 'Aktuell 2450 (Peak 2600)' },
+    { label: 'Spielzeit', value: '6.8k Stunden CS:GO/CS2' },
+    { label: 'Rollen', value: 'IGL · Support · Anchor' },
+    { label: 'Lieblingsmaps', value: 'Anubis, Mirage, Ancient' },
+    { label: 'Teams', value: 'ESEA Advanced / Scrim-Partner in DACH' },
+    { label: 'Coaching', value: '120+ Sessions 2024 · 4/5 Sterne Feedback' },
+  ],
+  highlights: [
+    'Premiere 18k MMR · Global Elite (CS:GO)',
+    'Utility-Datenbank mit 200+ Lineups für Mirage/Anubis/Ancient',
+    '12-Wochen Programm für Faceit Level 6-10 mit Demo-Reviews & Aim-Plänen',
+  ],
+};
+
 function App() {
   return (
     <div className="app">
@@ -89,6 +108,7 @@ function App() {
       <header className="nav">
         <div className="logo">CS2 Pro Coaching</div>
         <nav className="nav-links" aria-label="Navigation">
+          <a href="#coach">Coach</a>
           <a href="#plans">Pakete</a>
           <a href="#curriculum">Curriculum</a>
           <a href="#reviews">Reviews</a>
@@ -147,6 +167,45 @@ function App() {
               <p>{perk}</p>
             </div>
           ))}
+        </section>
+
+        <section id="coach" className="coach">
+          <div className="section-header">
+            <p className="eyebrow">Coach</p>
+            <h2>Wer dich coacht</h2>
+            <p className="subtext">Fake Stats, damit du ein Gefühl für Spielstil, Maps und Erfahrung bekommst.</p>
+          </div>
+
+          <div className="coach-grid">
+            <article className="coach-card">
+              <div className="coach-headline">
+                <div>
+                  <p className="coach-name">{coach.name}</p>
+                  <p className="coach-title">{coach.title}</p>
+                </div>
+                <div className="coach-pill">Faceit 10 · CS2 Grinder</div>
+              </div>
+              <p className="coach-bio">{coach.bio}</p>
+
+              <div className="coach-stats">
+                {coach.stats.map((stat) => (
+                  <div key={stat.label} className="coach-stat-card">
+                    <p className="stat-number">{stat.value}</p>
+                    <p className="stat-label">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="coach-highlights">
+                <p className="eyebrow">Highlights</p>
+                <ul>
+                  {coach.highlights.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section id="plans" className="plans">
