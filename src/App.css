@@ -273,6 +273,90 @@ body {
   box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.06);
 }
 
+.coach {
+  margin-top: 70px;
+}
+
+.coach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.coach-card {
+  position: relative;
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.coach-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 14% 20%, rgba(246, 170, 28, 0.18), transparent 50%);
+  pointer-events: none;
+}
+
+.coach-headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.coach-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.coach-title {
+  margin: 4px 0 0;
+  color: rgba(232, 236, 247, 0.78);
+}
+
+.coach-pill {
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.coach-bio {
+  margin: 0 0 16px;
+  color: rgba(232, 236, 247, 0.9);
+  line-height: 1.5;
+}
+
+.coach-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.coach-stat-card {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.coach-highlights ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  color: rgba(232, 236, 247, 0.9);
+}
+
 .section-header {
   text-align: center;
   margin: 60px 0 26px;
